@@ -1,4 +1,4 @@
-# JSX and Conditional Logic in React
+# JSX and Conditional Logic in React || Why if else not work in jsx
 In React, JSX (JavaScript XML) is used to define the structure of UI components. JSX resembles HTML but is actually a syntax extension of JavaScript. Here are several reasons why traditional if statements do not work directly within JSX:
 
 ## JSX is JavaScript
@@ -49,3 +49,8 @@ return (
 );
 ```
 These approaches maintain React's declarative nature and integrate well with JSX's expression-oriented syntax. They ensure that conditional logic remains clear and manageable within React's component-based architecture.
+
+## Summary
+JSX and Single Value Expectation:
+JSX, however, works differently. It expects expressions within curly braces {} to evaluate to a single value. This value determines what content gets rendered in the UI.
+## An if-else statement itself doesn't evaluate to a single value. It defines a code block to be executed based on a condition.
