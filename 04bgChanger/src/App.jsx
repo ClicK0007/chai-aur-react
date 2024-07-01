@@ -32,3 +32,12 @@ function App() {
 }
 
 export default App
+
+/*
+Arrow Function in onClick:
+onClick={() => setColor("red")} creates an arrow function that sets the color state to "red" when the element is clicked.
+
+Direct Call onClick(setColor):
+onClick(setColor) tries to call setColor immediately when the component renders, not when the click happens. React expects onClick to be a function 
+that runs when the element is clicked, not a direct call to a state-setting function.
+*/

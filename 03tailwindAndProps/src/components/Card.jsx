@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username, btnText="visit me"}) {
+function Card({username, btnText="visit me"}) { // Destructuring of Object // visit me is the default value of btnText
     console.log(username);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md ">
@@ -17,7 +17,7 @@ function Card({username, btnText="visit me"}) {
       debitis?
     </p>
     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-      {btnText } →
+      {btnText } → {/*btnText || visit me      // id btnText not received visit me will be displayed*/}
     </button>
   </div>
 </div>
