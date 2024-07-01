@@ -18,4 +18,3 @@ During re-render, a new counter constant is created with the updated state value
 # Why --counter gives error assignment to const variable
 ## Why Not --counter:
 - Direct State Mutation: If you were to use --counter, it would directly modify the counter variable but would not trigger a state update in React. 
-- This would not work as expected because React would not know that the state has changed and would not re-render the component.
